@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel CORRADI - CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button class="expand-all-btn" onclick="toggleAll()">TOUT DÉVELOPPER</button>
+
+
+    <div class="cv-container">
+        <!-- Motif de lignes courbes en haut -->
+        <div class="decorative-lines"></div>
+        <svg class="wave-pattern" viewBox="0 0 1200 150" preserveAspectRatio="none">
+            <path d="M0,50 Q300,0 600,50 T1200,50 L1200,0 L0,0 Z" fill="#2c2c2c" opacity="0.02" />
+            <path d="M0,80 Q300,30 600,80 T1200,80 L1200,0 L0,0 Z" fill="#2c2c2c" opacity="0.02" />
+            <path d="M0,110 Q300,60 600,110 T1200,110 L1200,0 L0,0 Z" fill="#2c2c2c" opacity="0.02" />
+        </svg>
+
+        <!-- Header -->
+        <div class="header">
+            <div class="header-left">
+                <div class="name-title">
+                    <h1><span>CORRADI</span> <span>Gabriel</span></h1>
+                    <div class="professional-title">Manager expérimenté :<br>Encadrement & Pilotage d'équipe</div>
+                    <div class="description">
+                        Fort d'une solide expérience dans la gestion et la coordination d'équipes, je maîtrise
+                        l'organisation du travail,
+                        l'optimisation des performances et l'accompagnement des collaborateurs. Rigoureux, orienté
+                        résultats et doté
+                        d'un bon sens relationnel, je sais fédérer et motiver pour atteindre les objectifs fixés.
+                    </div>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="photo-container">
+                    <img src="profil.png" alt="Photo de Gabriel CORRADI" class="profile-photo">
+                </div>
+                <div class="contact-info">
+                    <div>06.34.30.77.28</div>
+                    <div>
+                        <a href="mailto:gcorradi31@gmail.com" class="contact-mail">gcorradi31@gmail.com</a>
+                    </div>
+
+                    <div>Les CATALAS - 09700 Saverdun</div>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/gcorradi" target="_blank" class="icon-link" title="LinkedIn">
+                            <!-- LinkedIn SVG -->
+                            <svg viewBox="0 0 32 32" width="28" height="28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="32" height="32" rx="7" fill="#0A66C2" />
+                                <path
+                                    d="M10 24V12H14V24H10ZM12 10C13.1 10 14 9.1 14 8C14 6.9 13.1 6 12 6C10.9 6 10 6.9 10 8C10 9.1 10.9 10 12 10ZM18 24V16.5C18 15.1 18.1 14 20 14C21.9 14 22 15.1 22 16.5V24H18ZM20 12C20 11.45 19.55 11 19 11C18.45 11 18 11.45 18 12C18 12.55 18.45 13 19 13C19.55 13 20 12.55 20 12Z"
+                                    fill="#fff" />
+                            </svg>
+                        </a>
+                        <a href="https://github.com/GCorradi" target="_blank" class="icon-link" title="GitHub">
+                            <!-- GitHub SVG -->
+                            <svg viewBox="0 0 32 32" width="28" height="28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="32" height="32" rx="7" fill="#191919" />
+                                <path
+                                    d="M16 7C11.58 7 8 10.58 8 15C8 18.41 10.39 20.86 13.45 21.71C13.8 21.78 13.94 21.56 13.94 21.37C13.94 21.2 13.93 20.7 13.93 20.18C12 20.59 11.61 19.37 11.61 19.37C11.3 18.61 10.81 18.39 10.81 18.39C10.09 17.91 10.85 17.92 10.85 17.92C11.62 17.98 12.02 18.76 12.02 18.76C12.73 19.95 13.86 19.62 14.29 19.44C14.36 18.89 14.57 18.54 14.8 18.34C13.47 18.15 12.08 17.56 12.08 15.59C12.08 15.04 12.26 14.62 12.54 14.34C12.49 14.14 12.33 13.62 12.58 12.92C12.58 12.92 12.97 12.81 13.93 13.54C14.28 13.45 14.66 13.41 15.04 13.41C15.42 13.41 15.8 13.45 16.15 13.54C17.11 12.81 17.5 12.92 17.5 12.92C17.75 13.62 17.59 14.14 17.54 14.34C17.82 14.62 18 15.04 18 15.59C18 17.57 16.61 18.15 15.28 18.34C15.55 18.57 15.78 19.01 15.78 19.65C15.78 20.56 15.77 21.17 15.77 21.37C15.77 21.56 15.9 21.78 16.26 21.71C19.61 20.86 22 18.41 22 15C22 10.58 18.42 7 16 7Z"
+                                    fill="#fff" />
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenu principal -->
+        <div class="main-content">
+            <!-- Colonne gauche -->
+            <div class="left-column">
+                <!-- Expérience professionnelle -->
+                <h2 class="section-title">EXPÉRIENCE PROFESSIONNELLE</h2>
+
+                <div class="experience-item">
+                    <div class="experience-header" onclick="toggleExperience(this)">
+                        <img src="lacroix.jpg" alt="logo etienne lacroix" class="company-logo">
+                        <div class="job-title">Animateur d'équipe :</div>
+                        <div class="company-info">ETIENNE LACROIX ARTIFICES / MAZÈRES / SEPTEMBRE 2018 - JUILLET 2025
+                        </div>
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-details">
+
+                            <!-- Pilotage de la production (cliquable) -->
+                            <div class="sub-accordion">
+                                <div class="sub-header" onclick="toggleSubMenu(this)">
+                                    <strong>Pilotage de la production</strong>
+                                </div>
+                                <div class="sub-content">
+                                    <ul>
+                                        <li>Assurer le bon déroulement des opérations de fabrication</li>
+                                        <li>Gestion de la production et optimisation des flux et en-cours</li>
+                                        <li>Planification de l'atterrissage de la chaîne de production</li>
+                                        <li>Suivi des indicateurs de performance et objectifs journaliers</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Innovation & Amélioration continue (cliquable) -->
+                            <div class="sub-accordion">
+                                <div class="sub-header" onclick="toggleSubMenu(this)">
+                                    <strong>Innovation & Amélioration continue</strong>
+                                </div>
+                                <div class="sub-content">
+                                    <ul>
+                                        <li><strong>Conception et déploiement d'un outil de gestion d'équipe
+                                                digitalisé</strong> : allocation dynamique des opérateurs selon les
+                                            présences, répartition optimisée des postes, tableau de bord de suivi des
+                                            objectifs en temps réel</li>
+                                        <li>Digitalisation du management visuel de la performance</li>
+                                        <li>Optimisation des processus de production</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Sécurité & Qualité (cliquable) -->
+                            <div class="sub-accordion">
+                                <div class="sub-header" onclick="toggleSubMenu(this)">
+                                    <strong>Sécurité & Qualité</strong>
+                                </div>
+                                <div class="sub-content">
+                                    <ul>
+                                        <li>Contrôle rigoureux des procédures sécurité/qualité (environnement
+                                            pyrotechnique)</li>
+                                        <li>Formation continue des équipes aux standards</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Management d'équipe (cliquable) -->
+                            <div class="sub-accordion">
+                                <div class="sub-header" onclick="toggleSubMenu(this)">
+                                    <strong>Management d'équipe</strong>
+                                </div>
+                                <div class="sub-content">
+                                    <ul>
+                                        <li>Animation quotidienne de l'équipe de production</li>
+                                        <li>Développement des compétences et polyvalence des opérateurs</li>
+                                        <li>Gestion de la charge de travail et répartition des tâches</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-header" onclick="toggleExperience(this)">
+                        <img src="inter.jpg" alt="logo intermarche" class="company-logo">
+                        <div class="job-title">Employé <br> commercial :</div>
+                        <div class="company-info">Intermarche PYREVAL / PAMIERS / Mars 2017 - Août 2018
+                        </div>
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-details">
+                            <ul>
+                                <li>Gestion du rayon et merchandising</li>
+                                <li>Relation client et vente</li>
+                                <li>Gestion des stocks et approvisionnement</li>
+                                <li>Opérations commerciales</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header" onclick="toggleExperience(this)">
+                        <img src="marie.png" alt="logo marie blachere" class="company-logo">
+                        <div class="job-title">Manageur magasin :</div>
+                        <div class="company-info">BOULANGERIE MARIE BLACHERE / PORTET-SUR-GARONNE / 2016 - 2017</div>
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-details">
+                            <ul>
+                                <li>Encadrer et coordonner le travail des vendeurs(euses)</li>
+                                <li>Etablir le planning de travail et les procédures à respecter</li>
+                                <li>Recruter et former le personnel</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header" onclick="toggleExperience(this)">
+                        <img src="crf.png" alt="logo carrefour" class="company-logo">
+                        <div class="job-title">Adjoint responsable <br> magasin :</div>
+                        <div class="company-info">CARREFOUR CITY / LACROIX-FALGARDE / 2011 - 2015</div>
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-details">
+                            <ul>
+                                <li>Supervision des opérations</li>
+                                <li>Coordination et organisation du travail d'équipe</li>
+                                <li>Réalisation des commandes et réassortiment des rayons</li>
+                                <li>Réalisation des tâches administratives et financières</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formations -->
+                <h2 class="section-title">FORMATIONS</h2>
+
+                <div class="formation-item">
+                    <div class="formation-title">Certification des compétences en entreprise - Animer une équipe de
+                        travail</div>
+                    <div class="formation-org">PURPLE CAMPUS / FOIX / 2022</div>
+                </div>
+
+                <div class="formation-item">
+                    <div class="formation-title">Formation chef d'équipe</div>
+                    <div class="formation-org">ORGANISME DE FORMATION "CEGOS" / MAZÈRES / 2021</div>
+                </div>
+            </div>
+
+            <!-- Colonne droite -->
+            <div class="right-column">
+                <!-- Compétences -->
+                <h2 class="section-title">COMPÉTENCES</h2>
+
+                <div class="skill-category">
+                    <div class="skill-list">
+                        <div class="skill-item">Organisation & gestion du temps</div>
+                        <div class="skill-item">Prise d'initiative et autonomie</div>
+                        <div class="skill-item">Transmission & pédagogie</div>
+                        <div class="skill-item">Analyse des performances</div>
+                        <div class="skill-item">Amélioration continue & curiosité</div>
+                        <div class="skill-item">Travail d'équipe & leadership</div>
+                        <div class="skill-item">Analyse & résolution de problèmes</div>
+                        <div class="skill-item">Développement durable</div>
+                    </div>
+                </div>
+
+                <!-- Compétences techniques -->
+                <div class="tech-skills">
+                    <div class="tech-skills-title">Compétences techniques en cours d'acquisition :</div>
+                    <div class="skill-list">
+                        <div class="skill-item">HTML, CSS, JavaScript</div>
+                        <div class="skill-item">Git / GitHub</div>
+                        <div class="skill-item">Visual Studio Code</div>
+                        <div class="skill-item">Responsive design</div>
+                        <div class="skill-item">Logique de programmation / débogage</div>
+                    </div>
+                </div>
+
+                <!-- Diplômes -->
+                <h2 class="section-title">DIPLOMES</h2>
+
+                <div class="diploma-item">
+                    <span class="diploma-year">2010 :</span> BTS Management des Unités Commerciales à l'ESICAD 31670
+                    LABEGE
+                </div>
+                <div class="diploma-item">
+                    <span class="diploma-year">2007 :</span> BAC STI génie électrotechnique au lycée Charles de Gaulle
+                    31600 MURET
+                </div>
+
+                <!-- Centres d'intérêt -->
+                <h2 class="section-title">CENTRES D'INTÉRÊT</h2>
+
+                <div class="interests">
+                    <div class="interest-item">Cyclisme / VTT</div>
+                    <div class="interest-item">Veille technologique & apprentissage du code</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
